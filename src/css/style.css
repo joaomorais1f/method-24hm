@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --color-bg-purple: #694dc9;
+    --color-hover-purple: #3a00ff
+
+}
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--color-bg-purple);
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  color: white;
+}
+
+.form-body {
+  margin: 20px 0;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 5px;
+}
+
+ .input-block {
+  margin-bottom: 20px;
+}
+
+ .input-block label {
+  font-size: 14px;
+  color: darkslateblue;
+}
+
+ .input-block input {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 16px;
+  color:var(--color-bg-purple);
+  border-radius: 2px;
+  border: 1px solid #ccddef;
+  outline-color: var(--color-bg-purple);
+}
+
+.btn-add {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--color-bg-purple);
+  color: white;
+  border-radius: 25px;
+  margin: auto;
+  padding: 7px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+  color: black;
+  font-weight: bold;
+}
+
+.content-link:hover {
+  color: var(--color-hover-purple);
+  font-weight: bold;
+}
+
+.content-added {
+  padding-top: 20px;
+}

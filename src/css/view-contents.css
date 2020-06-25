@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-purple: #694dc9;
+    --color-bg-blue: #99d8ea;
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: var(--color-bg-blue);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid-card-3 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: auto;
+    padding: 2%;
+    grid-gap: 50px;
+}
+a {
+    color:black;
+}
+
+a:link, a:hover, a:visited {
+     text-decoration: none;
+}
+
+.card {
+    background: #fff;
+    /* border-radius: 30px; */
+    height: 250px;
+    overflow-y: auto;
+    width: 100%;
+    border: 2px solid #0080c0;
+    
+}
+
+.card-day {
+    background: blue;
+}
+
+
+
+.card-header {
+    background:#00a6f9;
+    border-bottom: 2px solid #0080c0;
+    /* border-top-left-radius: 28px;
+    border-top-right-radius: 280px; */
+    font-family: 'Alegreya Sans', sans-serif;
+    
+   
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Monda', sans-serif;
+
+}
+.card::-webkit-scrollbar {
+    width: 12px;
+}
+
+.card::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.content-title {
+    font-size: 20px;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+    transition: all 0.4 ease;
+    display: inline-block;
+}
+
+.icons:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(-0.7);
+    transform: scale(0.7);
+    transition: all 0.2s ease; 
+}
+
+.span-icons {
+    display: inline-block;
+    height: 30px;
+}
+
+
+ul {
+    margin-bottom:-15px;
+}
+
+@media (max-width:885px) 
+{
+    .grid-card-3 {
+         display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: auto;   
+    }
+}
+
+@media (max-width: 610px) {
+        .grid-card-3 {
+         display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: auto;   
+    }
+}
+
+@media (max-width: 420px) {
+        .grid-card-3 {
+         display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: auto;   
+    }
+}
